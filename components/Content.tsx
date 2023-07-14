@@ -133,45 +133,47 @@ const Content = () => {
           &#60;projects&#62;
         </h5>
 
-        {projects.map((p, i) => (
-          <Link target="_blank" href={p.link} key={i}>
-            <div className="flex items-center w-full gap-8 mb-8">
-              <div className="w-3/5">
-                <h1
-                  className={`${space_mono.className} text-lg font-bold text-slack-900 dark:text-white mb-4`}
-                >
-                  {p.name}
-                </h1>
+        <div className="flex flex-col w-full">
+          {projects.map((p, i) => (
+            <Link target="_blank" href={p.link} key={i}>
+              <div className="flex flex-col lg:flex-row items-center w-full gap-8 mb-8">
+                <div className="w-full order-2 lg:w-3/5 lg:order-1">
+                  <h1
+                    className={`${space_mono.className} text-lg font-bold text-slack-900 dark:text-white mb-4`}
+                  >
+                    {p.name}
+                  </h1>
 
-                <p
-                  className={`${roboto_mono.className} text-sm text-slack-900 dark:text-white mb-12`}
-                >
-                  {p.description}
-                </p>
+                  <p
+                    className={`${roboto_mono.className} text-sm text-slack-900 dark:text-white mb-12`}
+                  >
+                    {p.description}
+                  </p>
 
-                <div className="flex items-center gap-4">
-                  {p.tools.map((t, ii) => (
-                    <div
-                      key={ii}
-                      className={`${roboto_mono.className} bg-sky-500 p-2 rounded-lg text-xs text-white`}
-                    >
-                      {t}
-                    </div>
-                  ))}
+                  <div className="flex flex-wrap items-center w-full gap-4">
+                    {p.tools.map((t, ii) => (
+                      <div
+                        key={ii}
+                        className={`${roboto_mono.className} bg-sky-500 p-2 rounded-lg text-xs text-white`}
+                      >
+                        {t}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="w-full order-1 lg:w-2/5 lg:order-2">
+                  <Image
+                    src={p.image}
+                    alt={p.name}
+                    className="w-full h-auto lg:w-auto"
+                    width={150}
+                    height={150}
+                  />
                 </div>
               </div>
-              <div className="w-2/5">
-                <Image
-                  src={p.image}
-                  alt={p.name}
-                  className="w-auto h-auto"
-                  width={150}
-                  height={150}
-                />
-              </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
       <div className="mb-12 w-full">
         <h5
