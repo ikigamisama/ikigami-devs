@@ -38,7 +38,7 @@ export const projects: ProjectType[] = [
 			"MongoDB",
 			"Clerk",
 		],
-		image: "/images/projects/threads-clone.png",
+		image: "/images/projects/react-solid-principle.png",
 	},
 	{
 		name: "use100hooks Documentation",
