@@ -13,7 +13,7 @@ export const projects: ProjectType[] = [
 		description:
 			"Website for guidelines about SOLID principles which provide a set of time-tested guidelines that empower developers to build cleaner, more organized, and highly adaptable applications.",
 		tools: ["React", "NextJS", "Tailwind", "TypeScript"],
-		image: "/images/projects/threads-clone.png",
+		image: "/images/projects/react-solid-principle.png",
 	},
 	{
 		name: "Threads Clone",
@@ -29,7 +29,7 @@ export const projects: ProjectType[] = [
 			"MongoDB",
 			"Clerk",
 		],
-		image: "/images/projects/react-solid-principle.png",
+		image: "/images/projects/threads-clone.png",
 	},
 	{
 		name: "use100hooks Documentation",
