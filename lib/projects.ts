@@ -12,16 +12,7 @@ export const projects: ProjectType[] = [
 		link: "https://solid-principle-react.vercel.app",
 		description:
 			"Website for guidelines about SOLID principles which provide a set of time-tested guidelines that empower developers to build cleaner, more organized, and highly adaptable applications.",
-		tools: [
-			"React",
-			"NextJS",
-			"Tailwind",
-			"TypeScript",
-			"NodeJS",
-			"Express",
-			"MongoDB",
-			"Clerk",
-		],
+		tools: ["React", "NextJS", "Tailwind", "TypeScript"],
 		image: "/images/projects/threads-clone.png",
 	},
 	{
